@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VP Nav</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet prefetch" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle"> 
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAB+0lEQVR4AcyYg5LkUBhG+1X2PdZGaW3btm3btm3bHttWrPomd1r/2Jn/VJ02TpxcH4CQ/dsuazWgzbIdrm9dZVd4pBz4zx2igTaFHrhvjneVXNHCSqIlFEjiwMyyyOBilRgGSqLNF1jnwNQdIvAt48C3IlBmHCiLQHC2zoHDu6zG1iXn6+y62ScxY9AODO6w0pvAqf23oSE4joOfH6OxfMoRnoGUm+de8wykbFt6wZtA07QwtNOqKh3ZbS3Wzz2F+1c/QJY0UCJ/J3kXWJfv7VhxCRRV1jGw7XI+gcO7rEFFRvdYxydwcPsVsC0bQdKScngt4iUTD4Fy/8p7PoHzRu1DclwmgmiqgUXjD3oTKHbAt869qdJ7l98jNTEblPTkXMwetpvnftA0LLHb4X8kiY9Kx6Q+W7wJtG0HR7fdrtYz+x7iya0vkEtUULIzCjC21wY+W/GYXusRH5kGytWTLxgEEhePPwhKYb7EK3BQuxWwTBuUkd3X8goUn6fMHLyTT+DCsQdAEXNzSMeVPAJHdF2DmH8poCREp3uwm7HsGq9J9q69iuunX6EgrwQVObjpBt8z6rdPfvE8kiiyhsvHnomrQx6BxYUyYiNS8f75H1w4/ISepDZLoDhNJ9cdNUquhRsv+6EP9oNH7Iff2A9g8h8CLt1gH0Qf9NMQAFnO60BJFQe0AAAAAElFTkSuQmCC" />
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-sm hidden-md hidden-lg"><a data-toggle="collapse" data-target=".navbar-form"><i class="glyphicon glyphicon-search"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="hidden-sm hidden-md hidden-lg"> <i class="glyphicon glyphicon-user"></i>     </span>
+                        <span class="hidden-xs">Entrar / Cadastrar</span>
+                    </a>
+                    <ul class="dropdown-menu vp-subitem">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Pesquisar">
+                </div>
+            </form>
+            <ul class="nav nav-pills vp-nav">
+                <div class="overlay-menu"></div>
+                <li class="vp-item with-subitem">
+                    <a href=""><i class="glyphicon glyphicon-glass"></i> Bebidas</a>
+                    <ul class="vp-subitem">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="vp-item with-subitem">
+                    <a href=""><i class="glyphicon glyphicon-heart"></i> Favoritos</a>
+                    <ul class="vp-subitem">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-road"></i> Rotas</a>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-globe"></i> Explorar</a>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-phone-alt"></i> Telefones</a>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-tree-conifer"></i> Árvores</a>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-apple"></i> Maçã</a>
+                </li>
+                <li class="vp-item with-subitem">
+                    <a href=""><i class="glyphicon glyphicon-ice-lolly"></i> Sorvete</a>
+                    <ul class="vp-subitem">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="vp-item">
+                    <a href=""><i class="glyphicon glyphicon-piggy-bank"></i> Cofrinho</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu est sit amet justo convallis vestibulum ut quis elit.
+            Integer sollicitudin tortor ante, elementum iaculis tellus dictum sed. Integer ultrices turpis felis, nec porta
+            velit facilisis imperdiet. Phasellus sagittis, nulla eget ullamcorper egestas, neque metus commodo purus, vitae
+            luctus mauris elit quis ex. Sed sodales accumsan pellentesque. Mauris vestibulum massa eget sagittis commodo.
+            Aenean sodales aliquam vehicula. Pellentesque ut sem a magna pretium vestibulum. Cras cursus pretium eros id
+            mollis. Nulla eget lacus nec eros aliquam lacinia. Suspendisse posuere turpis id auctor dignissim. Nam at eros
+            ut metus hendrerit porta. Praesent eget lacus odio. Integer vel bibendum libero. Sed efficitur consectetur imperdiet.
+            Praesent dui eros, iaculis eget diam id, viverra viverra elit. Proin dignissim eu massa eu tempus. Cras in imperdiet
+            felis. Fusce ac tempor ipsum. Ut id scelerisque ligula. Praesent porta ac quam in ultricies. Sed auctor malesuada
+            diam volutpat tristique. Praesent fermentum eget dolor pellentesque pellentesque. Maecenas a ex at sapien ullamcorper
+            vestibulum vitae vulputate lacus. Ut commodo blandit nibh, sed malesuada mauris bibendum a. Nulla eleifend arcu
+            gravida enim placerat lacinia. Mauris imperdiet fermentum turpis hendrerit dictum. Vestibulum placerat massa
+            nec varius interdum. Vestibulum est enim, ultricies quis est ac, aliquam scelerisque purus. Nulla luctus libero
+            sed volutpat ullamcorper. Vivamus sagittis tortor et ex congue, viverra pellentesque urna euismod. Proin nec
+            varius erat. Donec et nulla iaculis tortor lacinia pellentesque. Phasellus fringilla turpis eget tincidunt ultrices.
+            Quisque ante dolor, sollicitudin ut tristique eu, molestie a nisi. Sed ac diam nisi. Integer justo lacus, blandit
+            ut tempor eu, iaculis ac nunc. Duis consectetur sagittis nisi. Vivamus convallis bibendum ullamcorper. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ullamcorper metus nec turpis
+            rutrum euismod a ac mauris. Praesent id dictum eros, sit amet congue libero. Suspendisse sed ultrices leo. Donec
+            a sapien sit amet magna sollicitudin suscipit ultricies sed eros. Curabitur ac felis venenatis mauris interdum
+            euismod ut sed ex. Proin pellentesque ornare magna, ut mollis tortor finibus vitae. Mauris pretium porta purus,
+            sit amet congue arcu tempus sit amet. Nunc diam nisi, imperdiet id vehicula ac, sagittis vel purus. Donec eget
+            dictum mi. Nullam tincidunt tellus sit amet suscipit pretium. Nulla facilisi. In ac dolor eget ante pretium venenatis.
+            Donec sit amet bibendum elit. Mauris viverra tortor vitae tellus blandit venenatis. Praesent efficitur scelerisque
+            vulputate. Phasellus molestie, lacus vel tempus ornare, metus lorem rhoncus quam, ut lacinia eros dui eu lacus.
+            In viverra ornare sapien, a congue ipsum iaculis ut. Cras id volutpat justo. Fusce vel leo tellus. Pellentesque
+            ac tellus ultricies, aliquet metus sed, hendrerit neque. Integer vestibulum, tellus vel volutpat vulputate, felis
+            nulla ornare metus, quis tincidunt velit justo ac diam. Pellentesque porttitor fermentum tortor, sed condimentum
+            purus. Curabitur ac nibh sed turpis scelerisque pretium. Nunc pellentesque neque risus, sed rhoncus nunc porta
+            nec. Suspendisse dictum, augue a imperdiet consequat, arcu est ullamcorper elit, feugiat molestie massa libero
+            ac ipsum. Phasellus in justo tincidunt, tincidunt eros a, tempor neque. Integer ullamcorper tristique gravida.
+            Praesent semper feugiat purus, quis hendrerit eros facilisis nec. Etiam fermentum eget erat id vehicula. Proin
+            mattis ante eget neque euismod volutpat. Quisque feugiat bibendum erat, sed condimentum turpis auctor vel. Phasellus
+            fringilla ac elit non congue. Cras vitae nisl elementum, sodales metus sed, vestibulum dolor. Duis sit amet orci
+            justo. Proin dolor nulla, rutrum non risus eget, finibus dictum sapien. Phasellus viverra bibendum ultricies.
+            Sed dignissim gravida mattis. Donec vitae sapien nec tellus faucibus tristique. Phasellus erat eros, posuere
+            condimentum justo sed, interdum molestie dolor. Morbi elementum rutrum varius. Nulla sit amet congue velit. Aenean
+            lobortis eu quam ut pulvinar. Nam velit nibh, egestas ac malesuada quis, finibus eget odio. Nullam elementum
+            sem non magna aliquet, in efficitur lorem tincidunt. Vestibulum non dui dignissim, tempor est hendrerit, faucibus
+            sem. Aliquam ut ipsum eget sem varius elementum. Ut eleifend augue magna, non fermentum sapien dignissim vitae.
+            Maecenas bibendum condimentum turpis vel lacinia. Integer mi tortor, tincidunt non sodales et, gravida sed ex.
+            Vestibulum sit amet ornare augue. Etiam suscipit, nisl vel blandit elementum, odio diam porta urna, quis ultrices
+            mauris sapien non lacus. Cras ut turpis dui. Maecenas fermentum ultrices nibh, ut elementum tellus pellentesque
+            ac. Maecenas ac pulvinar sem. Duis pellentesque rhoncus metus, ut maximus magna facilisis vitae. Nunc lectus
+            libero, hendrerit eu odio a, mollis sagittis est. Praesent egestas urna a est rhoncus lacinia. Mauris sodales
+            metus eget arcu pretium lobortis. Mauris mauris ligula, dictum sit amet ligula sed, sollicitudin mattis dolor.
+            Pellentesque a neque et dolor dignissim rutrum vel convallis orci. Nullam magna justo, varius et metus tempus,
+            blandit vestibulum magna. Aliquam ligula mi, malesuada imperdiet pharetra vitae, facilisis in ante. Fusce felis
+            nisi, tempus eget massa at, elementum vulputate nunc. Phasellus venenatis urna maximus ultrices varius. Praesent
+            vel sapien sed metus lobortis congue. Vivamus viverra, massa feugiat egestas bibendum, enim ipsum elementum libero,
+            eu suscipit mi diam ut est. Nam molestie, purus vel commodo placerat, justo eros vestibulu fringilla ac elit
+            non congue. Cras vitae nisl elementum, sodales metus sed, vestibulum dolor. Duis sit amet orci justo. Proin dolor
+            nulla, rutrum non risus eget, finibus dictum sapien. Phasellus viverra bibendum ultricies. Sed dignissim gravida
+            mattis. Donec vitae sapien nec tellus faucibus tristique. Phasellus erat eros, posuere condimentum justo sed,
+            interdum molestie dolor. Morbi elementum rutrum varius. Nulla sit amet congue velit. Aenean lobortis eu quam
+            ut pulvinar. Nam velit nibh, egestas ac malesuada quis, finibus eget odio. Nullam elementum sem non magna aliquet,
+            in efficitur lorem tincidunt. Vestibulum non dui dignissim, tempor est hendrerit, faucibus sem. Aliquam ut ipsum
+            eget sem varius elementum. Ut eleifend augue magna, non fermentum sapien dignissim vitae. Maecenas bibendum condimentum
+            turpis vel lacinia. Integer mi tortor, tincidunt non sodales et, gravida sed ex. Vestibulum sit amet ornare augue.
+            Etiam suscipit, nisl vel blandit elementum, odio diam porta urna, quis ultrices mauris sapien non lacus. Cras
+            ut turpis dui. Maecenas fermentum ultrices nibh, ut elementum tellus pellentesque ac. Maecenas ac pulvinar sem.
+            Duis pellentesque rhoncus metus, ut maximus magna facilisis vitae. Nunc lectus libero, hendrerit eu odio a, mollis
+            sagittis est. Praesent egestas urna a est rhoncus lacinia. Mauris sodales metus eget arcu pretium lobortis. Mauris
+            mauris ligula, dictum sit amet ligula sed, sollicitudin mattis dolor. Pellentesque a neque et dolor dignissim
+            rutrum vel convallis orci. Nullam magna justo, varius et metus tempus, blandit vestibulum magna. Aliquam ligula
+            mi, malesuada imperdiet pharetra vitae, facilisis in ante. Fusce felis nisi, tempus eget massa at, elementum
+            vulputate nunc. Phasellus venenatis urna maximus ultrices varius. Praesent vel sapien sed metus lobortis congue.
+            Vivamus viverra, massa feugiat egestas bibendum, enim ipsum elementum libero, eu suscipit mi diam ut est. Nam
+            molestie, purus vel commodo placerat, justo eros vestibulu fringilla ac elit non congue. Cras vitae nisl elementum,
+            sodales metus sed, vestibulum dolor. Duis sit amet orci justo. Proin dolor nulla, rutrum non risus eget, finibus
+            dictum sapien. Phasellus viverra bibendum ultricies. Sed dignissim gravida mattis. Donec vitae sapien nec tellus
+            faucibus tristique. Phasellus erat eros, posuere condimentum justo sed, interdum molestie dolor. Morbi elementum
+            rutrum varius. Nulla sit amet congue velit. Aenean lobortis eu quam ut pulvinar. Nam velit nibh, egestas ac malesuada
+            quis, finibus eget odio. Nullam elementum sem non magna aliquet, in efficitur lorem tincidunt. Vestibulum non
+            dui dignissim, tempor est hendrerit, faucibus sem. Aliquam ut ipsum eget sem varius elementum. Ut eleifend augue
+            magna, non fermentum sapien dignissim vitae. Maecenas bibendum condimentum turpis vel lacinia. Integer mi tortor,
+            tincidunt non sodales et, gravida sed ex. Vestibulum sit amet ornare augue. Etiam suscipit, nisl vel blandit
+            elementum, odio diam porta urna, quis ultrices mauris sapien non lacus. Cras ut turpis dui. Maecenas fermentum
+            ultrices nibh, ut elementum tellus pellentesque ac. Maecenas ac pulvinar sem. Duis pellentesque rhoncus metus,
+            ut maximus magna facilisis vitae. Nunc lectus libero, hendrerit eu odio a, mollis sagittis est. Praesent egestas
+            urna a est rhoncus lacinia. Mauris sodales metus eget arcu pretium lobortis. Mauris mauris ligula, dictum sit
+            amet ligula sed, sollicitudin mattis dolor. Pellentesque a neque et dolor dignissim rutrum vel convallis orci.
+            Nullam magna justo, varius et metus tempus, blandit vestibulum magna. Aliquam ligula mi, malesuada imperdiet
+            pharetra vitae, facilisis in ante. Fusce felis nisi, tempus eget massa at, elementum vulputate nunc. Phasellus
+            venenatis urna maximus ultrices varius. Praesent vel sapien sed metus lobortis congue. Vivamus viverra, massa
+            feugiat egestas bibendum, enim ipsum elementum libero, eu suscipit mi diam ut est. Nam molestie, purus vel commodo
+            placerat, justo eros vestibulum tortor, sed cursus elit nunc non enim. Curabitur tortor dui, efficitur non vehicula
+            sit amet, malesuada at enim. Proin lacinia, arcu vitae efficitur consequat, sem risus bibendum purus, id iaculis
+            tortor risus a massa. Donec fermentum dolor ut ullamcorper eleifend. Nullam ante erat, consectetur non lacus
+            eget, sodales laoreet elit. In eleifend tellus velit, at convallis erat posuere et. Aliquam elementum sagittis
+            ipsum quis euismod. Ut venenatis, nisi ut elementum laoreet, ex leo egestas nisl, in condimentum est nisi in
+            sem. In ut orci sem. Nunc ultricies aliquam ex, a porta nisi semper sit amet. Nullam eget mi nec risus egestas
+            tempor id ut purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Vivamus accumsan, ligula eget faucibus cursus, justo erat ornare dolor, non lacinia velit elit eu nisi. Proin
+            vulputate nec leo vitae pretium. Integer ut turpis quam. Suspendisse ac leo quis lectus congue dignissim. Donec
+            ut ipsum sed eros interdum mollis. Maecenas ullamcorper magna vitae mauris sodales volutpat. Maecenas risus velit,
+            consectetur et tortor non, scelerisque mattis lorem. Nam tortor tortor, accumsan sit amet dolor in, faucibus
+            pharetra mauris. Integer blandit, erat in convallis sollicitudin, lorem orci scelerisque augue, ac pharetra felis
+            ex cursus nibh. Curabitur nec tempor sem, vel iaculis tellus. Nullam eleifend odio et lorem mollis sollicitudin.
+            Quisque imperdiet pulvinar scelerisque. Etiam bibendum iaculis mauris et finibus. In sodales congue eros, eu
+            efficitur tortor faucibus non. Donec enim nisl, ultrices id orci sit amet, molestie ultricies magna. Praesent
+            eget diam turpis. Morbi dictum rutrum mauris in porta. Fusce cursus non mi congue scelerisque. Duis consequat
+            lacus venenatis magna venenatis, sit amet aliquam metus pretium. Ut id velit vel lectus efficitur elementum nec
+            finibus tellus. Duis nisl ante, posuere id dui eget, lacinia lacinia justo. Donec a eleifend nunc, non dapibus
+            sapien. Proin tortor diam, semper in velit a, aliquam finibus odio. Mauris nunc sapien, accumsan in varius at,
+            egestas quis dui. Nam a iaculis augue. Nam condimentum sapien eget lacus pharetra congue. Donec molestie ligula
+            bibendum purus semper, id fermentum orci malesuada. Cras luctus tincidunt enim nec lacinia. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin in nisi congue purus vulputate dictum
+            id ut purus. Integer sit amet leo magna. Aenean hendrerit odio metus, pellentesque dignissim lorem suscipit quis.
+            Etiam consequat tincidunt tincidunt. Cras pulvinar nisi laoreet tellus lacinia mollis. Etiam vel ultricies libero.
+            Praesent pulvinar metus et porttitor hendrerit. Pellentesque erat orci, dignissim eu purus et, sollicitudin suscipit
+            quam. Mauris eget enim a nisl iaculis ultricies et ut mi. Nulla in nibh a eros lobortis varius nec vel lacus.
+            Fusce nec condimentum sem. Pellentesque sollicitudin enim libero, vel tincidunt diam cursus pulvinar. Donec non
+            tortor id turpis volutpat convallis. Sed mollis sapien dolor. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Ut gravida enim ut imperdiet dictum. Nunc ut rhoncus neque, ac
+            maximus tellus. Nulla eget mi leo. Aenean a massa rhoncus quam venenatis consectetur vitae in velit. Integer
+            velit justo, ullamcorper id mollis fermentum, cursus ut lectus. Vivamus accumsan aliquam elit et rhoncus.
+        </p>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

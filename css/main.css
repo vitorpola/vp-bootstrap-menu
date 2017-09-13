@@ -1,0 +1,253 @@
+body{
+  padding-top: 110px;
+}
+nav.navbar{
+  border-radius: 0px;
+  border-width: 0px 0px 1px 0px;
+}
+nav.navbar .navbar-form{
+  padding: 0px;
+  z-index: 10;
+}
+nav.navbar .navbar-form .form-control{
+  box-shadow: none;
+  background: transparent;
+}
+
+nav.navbar .navbar-header{
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+}
+
+nav.navbar .navbar-header .navbar-brand{
+  float: none;
+  display: inline-block;
+  padding: 5px 15px;
+}
+  
+nav.navbar .navbar-form .form-control:focus{
+  box-shadow: none;
+  border-color: #3F3F3F;
+}
+
+.vp-nav{
+  transition: margin .1s linear;  
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (min-width: 767px) {
+  .vp-nav.collapsed{
+    transition: margin .1s linear .1s, visibility 0s .2s;
+    visibility: hidden;
+    margin-top: -50px;
+  }
+  .vp-nav.collapsed .vp-item{
+    transition: opacity .1s linear;
+    opacity: 0;
+  }
+}
+
+.vp-nav .vp-item{
+  transition: opacity .1s linear .1s;
+  opacity: 1;
+  display: inline;
+  text-align: center;
+}
+
+.vp-nav .vp-item a:hover{
+  text-decoration: none;
+}
+
+.vp-nav .vp-item > a{
+  border-style: solid;  
+  border-width: 2px 1px 0px 1px;
+  border-color: transparent;
+  border-radius: 1px 1px 0px 0px;
+  color: #777;
+  text-transform: uppercase;  
+}
+
+.vp-nav .vp-item:hover > a{
+  border-color: #444 #e7e7e7 #e7e7e7 #e7e7e7;
+  background-color: #fff;
+  z-index: 1001;
+}
+
+.vp-nav .vp-item:hover > ul.vp-subitem{
+  display: block;
+}
+
+.vp-subitem{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 220px;
+  padding: 5px 0;
+  margin: 0;
+  margin-top: -1px;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border-style: solid;  
+  border-width: 1px; 
+  border-color: #e7e7e7;
+  border-radius: 0px 4px 4px 4px;
+  box-shadow: none;
+}
+
+.vp-subitem>li:not(.divider){
+  padding: 6px 10px;
+}
+
+.vp-subitem>li> a{
+  color: #333;
+}
+
+.vp-subitem>li>a:not(.divider):hover{
+  background: transparent;
+}
+  
+@media only screen and (max-width: 767px) {
+  body{
+    padding-top: 50px;
+  }
+  nav.navbar{
+    min-height: 43px;
+  }
+  .navbar-toggle{
+    float: left;
+    border: 0px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0px;
+  }
+  .navbar-form{
+    display: none;
+    box-shadow: 0;
+    border: 0px;
+    margin: 8px 0px;
+    min-width: 100%;
+  }
+  .navbar-nav,.navbar-nav>li, .navbar-nav>li>a {
+    display: inline-block;
+  }
+  .navbar-nav >li > a{
+    font-size: 20px;
+  }
+  .navbar-nav.navbar-right{
+    float: right;
+    margin: 0px;
+  }
+
+  .vp-nav{
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    transition: left 0.4s;
+    height: 100%;
+    width: 290px;
+    left: -290px;
+    margin-top: 0px;
+    overflow-x: auto;
+  }
+  .vp-nav.opened{
+    left: 0px;
+    box-shadow: 0px 0px 1px 500px rgba(100, 100, 100, 0.5);
+  }
+  .vp-nav> li.vp-item{
+    width: 100%;
+    text-align: left;
+  }
+  .vp-nav > li > a{
+    display: inline-block;
+    color: #333;
+    width: auto;
+    font-size: 1.3em;
+  }
+  .vp-nav > li > a > i{
+    width: 32px;
+    text-align: center;
+  }
+  .vp-nav .vp-subitem{
+    width: 100%;
+    position: relative;
+    background-color: rgba(150, 150, 150, 0.1);
+    border: 0px;
+    border-radius: 0px;
+  }
+
+  .vp-nav .vp-subitem li{
+    padding: 6px 0px;
+    border: 1px solid #eee;
+  }
+  .vp-nav .vp-subitem li>a {
+    color: #222;    
+    font-size: 1.2em;    
+    padding-left: 20px;
+  }
+    
+  .vp-nav.opened .overlay-menu{
+    display: block;
+  }
+  .vp-nav .overlay-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 290px;
+    background-color: transparent;
+  }
+
+  .nav-pills>li+li {
+    margin-left: 0px;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: unset;
+    z-index: 1000;
+    float: right;
+    width: auto;
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  .vp-item.with-subitem::before {
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    border-color: #777;
+    content: '';
+    display: block;
+    height: 10px;
+    right: 15px;
+    position: absolute;
+    top: 15px;
+    transform: rotate(135deg);
+    transition: transform .2s linear;
+    width: 10px;
+  }
+  
+  .vp-item.with-subitem:hover::before {
+    transform: rotate(-45deg);
+  }
+
+  nav.navbar .navbar-header .navbar-brand > img{
+    height: 32px;
+  }
+
+  .vp-nav .vp-item:hover > a{
+    border: 0;
+    background-color: transparent;
+    z-index: 1001;
+  }  
+}
